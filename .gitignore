@@ -1,15 +1,56 @@
-results/
-policy/
-run.txt/
-train_run_names.txt
-custom_dqn_run.txt
-run_names_dqn_custom.txt
-campus_data_generator/
+# ===== OS / editors / tooling =====
+.DS_Store
 .idea/
-wandb/
+.vscode/
+.claude/
+*.swp
+
+# ===== Python =====
 __pycache__/
-training_evaluation/
-dqn.py
-qlearning.py
-ApproxSIOptimalControl/stoch_plots/
-myopic_exp_results
+*.py[cod]
+*.egg-info/
+*.egg
+build/
+dist/
+.ipynb_checkpoints/
+.venv/
+venv/
+wandb/
+
+# ===== Logs =====
+*.log
+
+# ===== Generated training / evaluation outputs =====
+# (per-agent training dirs, evaluation results, and generated figures)
+*_results_tuned_*/
+evaluation_results_*/
+model_threshold_figures/
+
+# ===== Paper / docs / binary artifacts (not part of the codebase) =====
+*.docx
+~$*
+*.tex
+*.aux
+*.out
+*.synctex.gz
+CLAUDE_CODE_PROMPT.md
+docs/
+
+# ===== Non-pipeline scripts =====
+# The repo ships only the three RL agents (double_dqn.py, ppo_agent.py,
+# ppo_continuous_new.py) plus the evaluation/analysis tooling. Retired or
+# experimental agents and legacy utilities are kept locally but not committed.
+deep_q_learning.py
+online_dqn.py
+train_tabular_q.py
+new_standard_ppo.py
+new_standard_ppo_cleanrl.py
+ppo_continuous_actions.py
+ppo_continuous_beta_bounded.py
+generate_report.py
+myopic_policy.py
+optimal_threshold.py
+threshold.py
+epidemic_models/
+
+
