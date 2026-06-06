@@ -1,4 +1,4 @@
-# SafeCampus-Multidiscrete
+# SafeClassroom
 
 Reinforcement learning for **classroom occupancy control during epidemics**. RL
 agents learn weekly admission decisions that trade off in-person attendance
